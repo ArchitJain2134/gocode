@@ -49,6 +49,11 @@ func main() {
 
 		},
 	}
+	var vishaladdress *Student
+	vishaladdress=&vishal
+
+	fmt.Println("addresss of vishal is = ",*vishaladdress)
+	// * (pointer) symbol ke andr value store hoti or. & symbol me address ki value store hoti h (memory me jagah)
 
 	// INTERFACE: interface is very useful we dont have to defien the type in interfacen it takes the value and understand on its own
 
