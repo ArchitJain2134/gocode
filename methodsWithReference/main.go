@@ -27,7 +27,7 @@ func main() {
 	vishal.Address = "Delhi"
 	vishal.Contact = 32547568767
 	sonam := UserB{
-		Name:    "Sonam Bajwa",
+		Name:    "Sonam ",
 		Address: "Saharanpur",
 		Contact: 43654765867,
 	}
