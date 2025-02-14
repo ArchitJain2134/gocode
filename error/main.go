@@ -7,6 +7,13 @@ import (
 )
 
 func main() {
+
+	dbconnection:=true
+		if !dbconnection{
+			fatalerror("cannot connect with DB so closing the program")
+		}
+
+		
 	pass := "12346789"
 	if len(pass)<8 {
 		error := fmt.Errorf("password does not match our criteria")
@@ -15,10 +22,7 @@ func main() {
 	}else{
 		savetodb(pass)
 	}
-	dbconnection:=true
-		if !dbconnection{
-			fatalerror("cannot connect with DB so closing the program")
-		}
+	
 	}
 
 	// fatal error
